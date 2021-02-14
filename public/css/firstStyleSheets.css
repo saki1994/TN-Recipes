@@ -1,0 +1,87 @@
+/* Stylesheets for header, footers, home about and categories page.*/
+/*1. NavBar font --> 'Roboto', sans-serif;  */
+/*2. Categories dropdown button --> 'Work Sans', sans-serif; */
+/*3. Navbar color --> #ccf2f4*/
+/*4. Font color for the whole website */
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f9f9;
+  padding: 0;
+  width: 100%;
+}
+
+.main-navbar {
+  background-color: #ccf2f4;
+  padding: 3rem;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.web-logo, .web-navbar {
+  font-family: 'Roboto', sans-serif;
+  display: inline;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.main-navbar a {
+  display: inline;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.right-navbar {
+  float: right;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+/*Search Bar */
+.search-container {
+  text-align: center;
+  padding: 3%;
+  background-image: url("../images/chili.png");
+  background-size: contain;
+}
+
+.search-input {
+  border: 2px #aaaaaa;
+  border-radius: 20px;
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  opacity: .90;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+::placeholder {
+  text-align: center;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+  padding: 1%;
+  background-color: #a4ebf3;
+  text-align: center;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  margin: 10px 8px 5px;
+  cursor: pointer;
+}
+
+.footer-para {
+  margin: 0;
+}
