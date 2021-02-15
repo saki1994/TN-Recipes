@@ -13,7 +13,7 @@
     display: inline-grid;
     border: 1px solid black;
     grid-template-columns: repeat(4, auto);
-    margin: 2rem 10px; 
+    margin: 2rem 10px;
   }
 
 
