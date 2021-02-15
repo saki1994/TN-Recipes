@@ -7,47 +7,51 @@ body {
   /*- changed*/
 }
 
-
 /* NAVBAR STYLING */
-
 .main-navbar {
   background-color: #ccf2f4;
   min-width: 100%;
-  overflow: hidden; /*to avoid horizontal scrolling */
-  display: flex;  /*to keep the logo and right side nav bar in one row*/
+  overflow: hidden;
+  /*to avoid horizontal scrolling */
+  display: flex;
+  /*to keep the logo and right side nav bar in one row*/
   padding: 60px 30px 10px;
-  justify-content: space-between; /*putting space between logo and Home, cat and about */
-  box-shadow: 10px 0 0 10px #b7d9db; /*a shadow for the navbar, giving a 3d look*/
+  justify-content: space-between;
+  /*putting space between logo and Home, cat and about */
+  box-shadow: 10px 0 0 10px #b7d9db;
+  /*a shadow for the navbar, giving a 3d look*/
 }
 
 .web-logo, .web-navbar {
   font-family: 'Roboto', sans-serif;
-  display: inline; /*keeping elements next to each other*/
-  margin: 0; /*to keep the right navbar align to web logo*/
+  display: inline;
+  /*keeping elements next to each other*/
+  margin: 0;
+  /*to keep the right navbar align to web logo*/
 }
 
 /*Left size - Logo*/
-.web-logo { /* Added styling to website logo */
+.web-logo {
+  /* Added styling to website logo */
   font-size: xxx-large;
   letter-spacing: 4px;
   font-weight: lighter;
   font-family: 'Delius Swash Caps', cursive;
-  color: rgb(233,150,122);
-text-shadow: 2px 1px rgb(167 108 87);
+  color: rgb(233, 150, 122);
+  text-shadow: 2px 1px rgb(167 108 87);
 }
 
 @media (max-width: 950px) {
-
-  .main-navbar{
+  .main-navbar {
     flex-direction: column;
-    text-align:center;
+    text-align: center;
     padding-bottom: 10px;
   }
 
   .web-logo {
-    font-size:xx-large;
+    font-size: xx-large;
     margin: auto auto 15px;
-    font-weight:bolder;
+    font-weight: bolder;
   }
 
   .main-navbar .web-navbar {
@@ -58,12 +62,10 @@ text-shadow: 2px 1px rgb(167 108 87);
     font-size: 1.2rem !important;
   }
 
-  .right-navbar > *:last-child {
-    padding-right:0;
+  .right-navbar>*:last-child {
+    padding-right: 0;
   }
-
 }
-
 
 /*Right side navbar*/
 .main-navbar a {
@@ -74,16 +76,16 @@ text-shadow: 2px 1px rgb(167 108 87);
   font-size: 1.5rem;
 }
 
-.main-navbar > *:last-child {
+.main-navbar>*:last-child {
   padding-right: 50px;
 }
 
 .main-navbar a:visited {
-  color: rgb(85,85,85);
+  color: rgb(85, 85, 85);
 }
 
 .main-navbar a:hover {
-  color: rgb(233,150,122);
+  color: rgb(233, 150, 122);
 }
 
 .right-navbar {
@@ -91,22 +93,24 @@ text-shadow: 2px 1px rgb(167 108 87);
   margin-top: 25px;
 }
 
-
 /*Search Bar */
 .search-container {
   text-align: center;
-  padding: 3%;
-  background-image: url("../images/chili.png");
-  background-size: contain;
+  padding: 4%;
+  background-image: url(../images/chili.png), url(../images/chili.png);
+  position: left;
+  background-position: left, right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 27%;
 }
 
 .search-input {
-  border: 2px #aaaaaa;
-  border-radius: 20px;
-  width: 50%;
-  height: 40px;
-  text-align: center;
-  opacity: .90;
+  border: 2px solid #ccf2f4;
+border-radius: 20px;
+width: 50%;
+height: 5vh;
+text-align: center;
+box-shadow: 0px 0px 5px 4px #b7d9db;
 }
 
 .search-input:focus {
@@ -126,6 +130,7 @@ text-shadow: 2px 1px rgb(167 108 87);
   text-align: center;
   min-width: 100%;
   max-width: 100%;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .icon {
