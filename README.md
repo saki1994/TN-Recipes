@@ -4,7 +4,7 @@
 **Body content should be styled inside secondStyleSheets.css
 
 To do for Home Page
-1. Set up navbar // Monday - Should be finished in 1 day.
+1. Set up navbar // Monday - Should be finished in 1 day. <<DONE>>
   a. Create hamburger menu
   b. Set flex-row for navbar.
   
