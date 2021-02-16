@@ -8,7 +8,7 @@ To do for Home Page
   a. Create hamburger menu
   b. Set flex-row for navbar.
   
-2. Search Bar // Tuesday - Should be finished in 1 day including footer.
+2. Search Bar // Tuesday - Should be finished in 1 day including footer. <<DONE>>
   a. Create box shadow.
   b. Shiny animation.
   3. Design the input search field.
@@ -19,7 +19,7 @@ To do for Home Page
   c. Box shadows for each meat categories.
   d. Once hover, should show the ingredient.
   
-4. Footer // Tuesday - Should be finished in 1 day including footer.
+4. Footer // Tuesday - Should be finished in 1 day including footer. <<DONE>>
   a. Copyrights left, social media account icons on right.
   b. Middle, website name.
 
