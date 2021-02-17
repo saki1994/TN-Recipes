@@ -1,97 +1,55 @@
 body {
-  overflow-x: hidden;
-  background-color: #f4f9f9;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  /*- changed*/
+   font-family: "Lato", sans-serif;
+   overflow-x: hidden;
+
 }
 
-/* NAVBAR STYLING */
 .main-navbar {
-  background-color: #ccf2f4;
-  min-width: 100%;
-  overflow: hidden;
-  /*to avoid horizontal scrolling */
-  display: flex;
-  /*to keep the logo and right side nav bar in one row*/
-  padding: 60px 30px 10px;
-  justify-content: space-between;
-  /*putting space between logo and Home, cat and about */
-  box-shadow: 10px 0 0 10px #b7d9db;
-  /*a shadow for the navbar, giving a 3d look*/
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: #ccf2f4;
+   overflow-x: hidden;
+   padding-top: 20px;
+   transition: 0.5s;
 }
 
-.web-logo, .web-navbar {
-  font-family: 'Roboto', sans-serif;
-  display: inline;
-  /*keeping elements next to each other*/
-  margin: 0;
-  /*to keep the right navbar align to web logo*/
-}
-
-/*Left size - Logo*/
-.web-logo {
-  /* Added styling to website logo */
-  font-size: xxx-large;
-  letter-spacing: 4px;
-  font-weight: lighter;
-  font-family: 'Delius Swash Caps', cursive;
-  color: rgb(233, 150, 122);
-  text-shadow: 2px 1px rgb(167 108 87);
-}
-
-@media (max-width: 950px) {
-  .main-navbar {
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-
-  .web-logo {
-    font-size: xx-large;
-    margin: auto auto 15px;
-    font-weight: bolder;
-  }
-
-  .main-navbar .web-navbar {
-    margin: auto 10px;
-  }
-
-  .main-navbar a {
-    font-size: 1.2rem !important;
-  }
-
-  .right-navbar>*:last-child {
-    padding-right: 0;
-  }
-}
-
-/*Right side navbar*/
-.main-navbar a {
-  display: inline;
-  padding: 10px 30px;
-  font-weight: lighter;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.main-navbar>*:last-child {
-  padding-right: 50px;
-}
-
-.main-navbar a:visited {
-  color: rgb(85, 85, 85);
+.main-navbar a{
+   text-decoration: none;
+   font-size: 25px;
+   color: black;
+   display: block;
+   padding: 8px 8px 32px;
 }
 
 .main-navbar a:hover {
-  color: rgb(233, 150, 122);
+   color: grey;
 }
 
-.right-navbar {
-  /*changed */
-  margin-top: 25px;
+.close-btn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 35px;
+
 }
+
+.open-btn {
+   font-size: 20px;
+   cursor: pointer;
+   background-color: #111;
+   color: white;
+   padding: 10px 15px;
+   border: none;
+}
+
+.open-btn:hover {
+   background-color: #444;
+}
+
 
 /*Search Bar */
 .search-container {
