@@ -1,116 +1,86 @@
 body {
+  font-family: 'Hachi Maru Pop', cursive;
   overflow-x: hidden;
-  background-color: #f4f9f9;
-  margin: 0;
+  box-sizing: border-box;
   padding: 0;
-  width: 100vw;
-  /*- changed*/
-}
-
-/* NAVBAR STYLING */
-.main-navbar {
-  background-color: #ccf2f4;
-  min-width: 100%;
-  overflow: hidden;
-  /*to avoid horizontal scrolling */
-  display: flex;
-  /*to keep the logo and right side nav bar in one row*/
-  padding: 60px 30px 10px;
-  justify-content: space-between;
-  /*putting space between logo and Home, cat and about */
-  box-shadow: 10px 0 0 10px #b7d9db;
-  /*a shadow for the navbar, giving a 3d look*/
-}
-
-.web-logo, .web-navbar {
-  font-family: 'Roboto', sans-serif;
-  display: inline;
-  /*keeping elements next to each other*/
   margin: 0;
-  /*to keep the right navbar align to web logo*/
 }
 
-/*Left size - Logo*/
-.web-logo {
-  /* Added styling to website logo */
-  font-size: xxx-large;
-  letter-spacing: 4px;
-  font-weight: lighter;
-  font-family: 'Delius Swash Caps', cursive;
-  color: rgb(233, 150, 122);
-  text-shadow: 2px 1px rgb(167 108 87);
+.top-bar {
+  background-color: #314e52;
+  padding: 10px;
+  position: absolute;
+  width: 39px;
+  height: 100vh;
+  top: 0;
+  text-align: center;
 }
 
-@media (max-width: 950px) {
-  .main-navbar {
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-
-  .web-logo {
-    font-size: xx-large;
-    margin: auto auto 15px;
-    font-weight: bolder;
-  }
-
-  .main-navbar .web-navbar {
-    margin: auto 10px;
-  }
-
-  .main-navbar a {
-    font-size: 1.2rem !important;
-  }
-
-  .right-navbar>*:last-child {
-    padding-right: 0;
-  }
+.main-navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #314e52;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 20px;
+  transition: 0.9s;
 }
 
-/*Right side navbar*/
 .main-navbar a {
-  display: inline;
-  padding: 10px 30px;
-  font-weight: lighter;
   text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.main-navbar>*:last-child {
-  padding-right: 50px;
-}
-
-.main-navbar a:visited {
-  color: rgb(85, 85, 85);
+  font-size: 25px;
+  color: white;
+  display: block;
+  padding: 8px 8px 32px;
 }
 
 .main-navbar a:hover {
-  color: rgb(233, 150, 122);
+  color: grey;
 }
 
-.right-navbar {
-  /*changed */
-  margin-top: 25px;
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 35px;
+}
+
+.open-btn {
+  font-size: 28px;
+  cursor: pointer;
+  background-color: inherit;
+  color: white;
+  border: none;
+  margin: 0;
+}
+
+.open-btn:hover {
+  background-color: #444;
 }
 
 /*Search Bar */
 .search-container {
-  text-align: center;
-  padding: 4%;
-  background-image: url(../images/chili.png), url(../images/chili.png);
-  position: left;
-  background-position: left, right;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 27%;
+  position: relative;
+  top: 0;
+  width: 62%;
+  left: 37%;
+  padding-right: -13px;
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-input {
-  border: 2px solid #ccf2f4;
-border-radius: 20px;
-width: 50%;
-height: 5vh;
-text-align: center;
-box-shadow: 0px 0px 5px 4px #b7d9db;
+  border: 0 ridge #314e52;
+  border-radius: 20px;
+  width: 33%;
+  height: 5vh;
+  text-align: center;
+  box-shadow: 0px 1px 11px 0px #314e52;
 }
 
 .search-input:focus {
@@ -121,23 +91,40 @@ box-shadow: 0px 0px 5px 4px #b7d9db;
   text-align: center;
   font-style: oblique;
   font-weight: bold;
+  color: #314e52;
+}
+
+.web-log {
+
+  font-size: 2rem;
+  margin-top: 0;
+  letter-spacing: 4px;
 }
 
 /* FOOTER */
 .footer {
-  padding: 1%;
-  background-color: #a4ebf3;
   text-align: center;
-  min-width: 100%;
-  max-width: 100%;
-  font-family: 'Roboto Mono', monospace;
 }
 
-.icon {
-  height: 25px;
-  width: 25px;
-  margin: 10px 8px 5px;
-  cursor: pointer;
+.top-bar .icon {
+  font-size: 26px;
+  color: white;
+  position: relative;
+  top: 54%;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.icon-open-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 9%;
+  position: relative;
+  top: 42%;
+}
+
+.icon-open-navbar i {
+  font-size: 19px;
 }
 
 .footer-para {

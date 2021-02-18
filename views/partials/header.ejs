@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>TN Recipe</title>
   <link rel="stylesheet" href="/css/firstStyleSheets.css">
   <link rel="stylesheet" href="/css/SecondStyleSheets.css">
@@ -13,15 +15,23 @@
 </head>
 
 <body>
-  <nav class="main-navbar">
-    <h2 class="web-logo"> TN-Recipes</h2>  <!-- changed -->
-    <div class="right-navbar">
-      <h3 class="web-navbar"><a class="" href="">Home</a></h3>
-      <h3 class="web-navbar"><a href="">Categories </a></h3>
-      <h3 class="web-navbar"><a href="">About</a></h3>
-    </div>
-  </nav>
-
+  <div class="main-navbar">
+    <a class="close-btn" href="#">x</a>
+    <h3 class="web-navbar"><a class="" href="">Home</a></h3>
+    <h3 class="web-navbar"><a href="">Categories </a></h3>
+    <h3 class="web-navbar"><a href="">About</a></h3>
+    <div class="icon-open-navbar"> 
+    <a><i class="icon fab fa-facebook-square"></i></a>
+    <a><i class="icon fab fa-twitter-square"></i></a>
+    <a><i class="icon fab fa-instagram-square"></i></a></div>
+  </div>
+  <div class="top-bar">
+  <button class="open-btn">☰l</button>
+  <a><i class="icon fab fa-facebook-square"></i></a>
+  <a><i class="icon fab fa-twitter-square"></i></a>
+  <a><i class="icon fab fa-instagram-square"></i></a>
+  </div>
   <div class="search-container">
+    <p class="web-log">Tin-Recipes</p>
     <input type="search" class="search-input" placeholder="Search for recipes" />
   </div>
