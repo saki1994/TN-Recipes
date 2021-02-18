@@ -13,7 +13,9 @@ body {
     width: 39px;
     height: 100vh;
     top: 0;
+    text-align: center;
 }
+
 
 
 .main-navbar {
@@ -25,9 +27,11 @@ body {
   left: 0;
   background-color: #7f007f;
   overflow-x: hidden;
+  overflow-y: hidden;
   padding-top: 20px;
-  transition: 0.5s;
+  transition: 0.9s;
 }
+
 
 .main-navbar a {
   text-decoration: none;
@@ -54,6 +58,7 @@ body {
     background-color: inherit;
     color: white;
     border: none;
+    margin: 0;
 }
 
 .open-btn:hover {
@@ -62,24 +67,23 @@ body {
 
 /*Search Bar */
 .search-container {
-  text-align: -webkit-right;
-  position: absolute;
-  top: 0;
-  width: 59%;
-  right: 0%;
-  padding-right: -13px;
-  padding-top: 12px;
-  display: flex;
-  justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 55%;
+    right: 1%;
+    padding-right: -13px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .search-input {
-  border: 2px solid #ccf2f4;
-  border-radius: 20px;
-  width: 47%;
-  height: 5vh;
-  text-align: center;
-  box-shadow: 0px 0px 5px 4px #b7d9db;
+    border: 1px solid #7f007f;
+    border-radius: 20px;
+    width: 47%;
+    height: 5vh;
+    text-align: center;
+    box-shadow: 0px 1px 2px 1px #4c004c;
 }
 
 .search-input:focus {
@@ -90,6 +94,7 @@ body {
   text-align: center;
   font-style: oblique;
   font-weight: bold;
+  color: #4c004c;
 }
 
 .web-log {
@@ -101,12 +106,26 @@ body {
 /* FOOTER */
 .footer {
   text-align: center;
+}
+.top-bar .icon {
+    font-size: 26px;
+    color: white;
+    position: relative;
+    top: 54%;
+    text-align: center;
+    margin-top: 36px;
+}
 
-.icon {
-  height: 25px;
-  width: 25px;
-  margin: 10px 8px 5px;
-  cursor: pointer;
+.icon-open-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 9%;
+    position: relative;
+    top: 42%;
+}
+
+.icon-open-navbar i {
+  font-size: 19px;
 }
 
 .footer-para {
