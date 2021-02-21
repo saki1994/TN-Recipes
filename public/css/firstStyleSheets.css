@@ -1,6 +1,4 @@
-html {
-  min-height: -webkit-fill-available;
-}
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -8,20 +6,18 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
 }
 
 
 .top-bar {
   background-color: #314e52;
   padding: 10px;
-  position: fixed;
   width: 39px;
-  height: 100vh;
-  height:calc(var(--var, 1vh) *100);
-  top: 0;
   text-align: center;
+  position: fixed;
+  height:100vh;
+  top: 0;
+  left: 0;
 }
 
 .main-navbar {
@@ -144,7 +140,7 @@ body {
   .top-bar {
     background-color: #314e52;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     width: 29px;
     height: 100vh;
     top: 0;
@@ -175,7 +171,7 @@ body {
   .top-bar {
     background-color: #314e52;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     width: 5%;
     height: 101%;
     top: 0;
