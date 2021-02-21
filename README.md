@@ -1,22 +1,15 @@
 # TN-Recipes
 
-<<<<<<< HEAD
-2/18 TODO
 
-1. side navbar
-   a. Media queries for diff. sizes.
-=======
-2/20 TODO
+TODO
 
-1. side navbar
-   a. Media queries for diff. sizes.
-   An article to read
-   https://medium.com/simple-human/stop-using-device-breakpoints-b11a87e2625c
-   --> Start with small screen.
-   --> https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/
-   --> Add js event listener (window) to fix the height of the top-bar for mobile screen size.
->>>>>>> bodyContent
+1. Body Content - home.ejs
 
-2. Upper navbar
-  a. Media queries for diff sizes.
-  b. Web logo and search button need to set to flex-colum for phone size screen type.
+a. Need to add a container for new added recipes.
+  1. Adjust size for different size screen using Media Queries.
+
+b. Container for food categories.
+  1. Set up food categories using carousel.
+      a. Big screen, 5 grid items each rows
+      b. Tablet screen, 4 grid items each rows
+      c. Mobile screen, 3 grid items each rows but image size needs to be adjusted.
