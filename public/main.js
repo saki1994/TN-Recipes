@@ -1,7 +1,5 @@
 var closeBtn = document.querySelector('.close-btn');
 var openBtn = document.querySelector('.open-btn');
-
-
 var screenWidth = window.innerWidth;
 
 closeBtn.addEventListener("click", function() {
