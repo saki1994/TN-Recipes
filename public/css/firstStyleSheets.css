@@ -1,4 +1,13 @@
+/* csslint ignore:start*/
+:root {
+  --topbar-bgcolor: #314e52;
+}
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -8,14 +17,13 @@ body {
   margin: 0;
 }
 
-
 .top-bar {
-  background-color: #314e52;
+  background-color: var(--topbar-bgcolor);
   padding: 10px;
-  width: 39px;
+  width: 4em;
   text-align: center;
   position: fixed;
-  height:100vh;
+  height: 100vh;
   top: 0;
   left: 0;
 }
@@ -121,9 +129,11 @@ body {
 .icon-open-navbar {
   display: flex;
   justify-content: space-between;
-  padding: 9%;
+  padding: 18%;
   position: relative;
   top: 42%;
+  box-sizing: border-box;
+  right: 17%;
 }
 
 .icon-open-navbar i {
@@ -135,7 +145,6 @@ body {
 }
 
 /* //////////////////////////////////*/
-
 @media only screen and (max-width:900) {
   .top-bar {
     background-color: #314e52;
@@ -145,9 +154,9 @@ body {
     height: 100vh;
     top: 0;
     text-align: center;
-}
+  }
 
-.open-btn {
+  .open-btn {
     font-size: 22px;
     cursor: pointer;
     background-color: inherit;
@@ -156,17 +165,19 @@ body {
     margin: 0;
     right: 10%;
     position: relative;
-}
+    padding: auto 0;
+  }
 
-.top-bar .icon {
+  .top-bar .icon {
     font-size: 20px;
     color: white;
     position: relative;
     top: 60%;
     text-align: center;
     margin-top: 36px;
+  }
 }
-}
+
 @media only screen and (max-width: 600px) {
   .top-bar {
     background-color: #314e52;
@@ -241,7 +252,7 @@ body {
     position: relative;
     top: 0;
     width: 80vw;
-    left:12%;
+    left: 12%;
     padding-right: -13px;
     padding-top: 22px;
     display: flex;
@@ -273,4 +284,4 @@ body {
     top: -1%;
     font-size: 1.5rem !important;
   }
-  }
+}
