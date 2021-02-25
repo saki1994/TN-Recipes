@@ -88,3 +88,24 @@
 .grid-item4 input[type="checkbox"] {
     margin-right: 5%;
 }
+
+
+.myButton {
+	background-color:#314e52;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:11px;
+	padding:5px 15px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:grey;
+  color: #314e52;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
