@@ -1,6 +1,68 @@
 <%- include('partials/header'); -%>
 
-
+<div class="top-container-recipe">
+  <div class="num1-recipe">
+    <p class="grid-item1 top-container-header">Recipe of the day</p>
+    <img class="grid-item2 num1-food" src="/images/chicken.jpg" alt="">
+    <h5 class="grid-item3">Title Food</h5>
+    <ul class="grid-item4">
+      <li> <input type="checkbox">¼ cup lemon juice</li>
+      <li> <input type="checkbox">¼ cup wok oil</li>
+      <li> <input type="checkbox">⅛ cup red wine vinegar</li>
+      <li> <input type="checkbox">1 tablespoon onion flakes</li>
+      <li> <input type="checkbox">1 tablespoon minced garlic</li>
+      <a href="#" class="myButton">See full recipe...</a>
+    </ul>
+  </div>
+  <div class="list-recipes"> <%# flex-column %>
+    <p class="top-container-header new-added-header">Newly Added Recipes</p> <%# first column %>
+    <div class="newly-added-recipes"> <%# Second column %>
+      <div>
+        <img class="new-add-items" src="/images/chicken.jpg" alt="">
+        <p class="new-rand-list">Food Title</p>
+      </div>
+      <div>
+        <img class="new-add-items" src="/images/chicken.jpg" alt="">
+        <p  class="new-rand-list">Food Title</p>
+      </div>
+      <div>
+        <img class="new-add-items" src="/images/chicken.jpg" alt="">
+        <p class="new-rand-list">Food Title</p>
+      </div>
+      <div>
+        <img class="new-add-items" src="/images/chicken.jpg" alt="">
+        <p class="new-rand-list">Food Title</p>
+      </div>
+      <div>
+        <img class="new-add-items" src="/images/chicken.jpg" alt="">
+        <p class="new-rand-list">Food Title</p>
+      </div>
+    </div>
+    <p class="top-container-header">Random Recipes</p>  <%# third column %>
+    <div class="random-recipe"> <%# fourth column %>
+      <div>
+        <img class="new-add-items" src="/images/chicken.jpg" alt="">
+        <p class="new-rand-list">Food Title</p>
+      </div>
+      <div>
+        <img class="new-add-items" src="/images/chicken.jpg" alt="">
+        <p class="new-rand-list">Food Title</p>
+      </div>
+      <div>
+        <img class="new-add-items" src="/images/chicken.jpg" alt="">
+        <p class="new-rand-list">Food Title</p>
+      </div>
+      <div>
+        <img class="new-add-items" src="/images/chicken.jpg" alt="">
+        <p class="new-rand-list">Food Title</p>
+      </div>
+      <div>
+        <img class="new-add-items" src="/images/chicken.jpg" alt="">
+        <p class="new-rand-list">Food Title</p>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="body-content">
   <div class="food-container top-row right-prt chick-container">
     <h1>Chicken</h1>
@@ -93,7 +155,7 @@
       <img src="/images/veg.jpg" alt="veggies-pic">
       <h5>Veggies</h5>
     </div>
-   </div>
+  </div>
   <div class="food-container last-row right-prt other-meat-container">
     <h1>Other meat</h1>
     <div class="grid-item">
