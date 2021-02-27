@@ -88,9 +88,8 @@
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Verdana;
-  font-size: 11px;
-  padding: 0px 15px;
+  font-family: var(--font-family);
+  font-size: 10px;
   text-decoration: none;
   width: 50%;
   text-align: center;
