@@ -84,6 +84,7 @@
 }
 
 @media only screen and (max-width: 700px) {
+<<<<<<< HEAD
 
   /* TOP CONTAINER*/
   .num1-recipe {
@@ -129,6 +130,8 @@
   }
 
   /* BODY CONTENT*/
+=======
+>>>>>>> homepage-responsive-tablet
   .top-bar {
     background-color: #314e52;
     padding: 13px;
