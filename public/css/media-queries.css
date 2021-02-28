@@ -5,11 +5,13 @@
     position: relative;
     left: 10px;
   }
+
   .num1-recipe .grid-item3 {
     height: 40%;
     position: relative;
     left: 20px;
     width: calc(100% - 40px);
+    margin-bottom: 16px;
   }
 
   .num1-recipe ul {
@@ -26,6 +28,29 @@
 }
 
 @media only screen and (max-width:900px) {
+
+  /*TOP CONTAINER */
+  .top-container-recipe {
+    grid-template-columns: 90%;
+  }
+
+  .num1-recipe {
+    padding: 0;
+  }
+
+  .num1-recipe img {
+    height: 65%;
+    width: calc(69% - 20px);
+    position: relative;
+    left: 36px;
+    top: 7px;
+  }
+
+  .num1-recipe ul {
+    line-height: 2.5;
+  }
+
+  /* BODY CONTENT */
   .top-bar {
     background-color: #314e52;
     padding: 10px;
@@ -58,13 +83,58 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+
+  /* TOP CONTAINER*/
+  .num1-recipe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .num1-recipe img {
+    height: 30%;
+    width: calc(50% - 20px);
+    position: relative;
+    left: 25%;
+    top: 20px;
+  }
+
+  .num1-recipe .grid-item3 {
+    height: auto;
+    left: 40%;
+    top: 10%;
+  }
+
+  .num1-recipe ul {
+    position: relative;
+    top: 15%;
+    width: 94%;
+    column-count: 2;
+  }
+
+  .myButton {
+    font-size: xx-small;
+  }
+
+  .newly-added-recipes, .random-recipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 5%
+  }
+
+  .new-add-items {
+    height: 80px;
+    width: 80px;
+  }
+
+  /* BODY CONTENT*/
   .top-bar {
     background-color: #314e52;
-    padding: 10px;
+    padding: 13px;
     position: fixed;
-    width: 10%;
-    height: 101%;
+    width: 9%;
+    height: 100%;
     top: 0;
     z-index: 1;
     /* text-align: left; */
