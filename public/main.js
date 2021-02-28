@@ -13,7 +13,7 @@ openBtn.addEventListener("click", function() {
   if (screenWidth <= 600) {
     document.querySelector('.main-navbar').style.width = "26%";
   } else if (screenWidth <= 900 && screenWidth >= 600) {
-    document.querySelector('.main-navbar').style.width = "16%";
+    document.querySelector('.main-navbar').style.width = "20%";
 
   } else {
 
