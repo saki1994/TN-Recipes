@@ -149,14 +149,18 @@ p.new-rand-list {
 /* START - BODY-CONTENT CSS */
 .body-content {
   text-align: center;
-  width: 550px;
+  width: 55%;
   position: relative;
   left: 25%;
+  background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    padding-right: 1%;
 }
 
 .a-btn {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     padding: 20px 40px;
 
@@ -196,6 +200,7 @@ p.new-rand-list {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  width: 83%;
 }
 
 .slider::-webkit-scrollbar {
@@ -211,6 +216,7 @@ p.new-rand-list {
   background-color: #314e52;
 }
 
+
 .food-container {
   display: inline-grid;
   grid-template-columns: repeat(4, auto);
@@ -223,7 +229,8 @@ p.new-rand-list {
   margin: auto 25px;
   transform-origin: center center;
   transform: scale(1);
-  transition: transform 0.3s;
+  transition: transform 0.5s;
+  border: 1px solid black;
 }
 
 .body-content img {
