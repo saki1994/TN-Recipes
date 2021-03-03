@@ -46,10 +46,11 @@
 }
 
 .num1-recipe img {
-  height: 200px;
-  width: calc(100% - 100px);
-  position: relative;
-  left: 30px;
+      height: 236px;
+      width: calc(100% - 70px);
+      position: relative;
+      left: 30px;
+      border-radius: 50%; 
 }
 
 .grid-item2 {
