@@ -148,22 +148,29 @@ p.new-rand-list {
 
 /* START - BODY-CONTENT CSS */
 .body-content {
-  text-align: center;
-  width: 55%;
-  position: relative;
-  left: 25%;
-  background-color: aliceblue;
+    text-align: center;
+    width: calc(100vw - 5%);
+    position: relative;
+    left: 5%;
     display: flex;
     flex-direction: row;
-    padding-right: 1%;
+    padding: 6%;
 }
+
 
 .a-btn {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 20px 40px;
-
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 0;
+    width: 20%;
+    border: 18px double lightpink;
+    /* border-radius: 40%; */
+    border-right: none;
+    z-index: 1;
+    position: relative;
+    left: 100px;
 }
 
 .a-btn a {
@@ -183,6 +190,9 @@ p.new-rand-list {
     padding: 7px 25px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #e1e2ed;
+    width: 60%;
+    position: relative;
+    left: 15%;
 }
 
 .myButton:hover {
@@ -195,12 +205,16 @@ p.new-rand-list {
 }
 
 .slider {
-  display: flex;
-  scroll-snap-align: start;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  width: 83%;
+    display: flex;
+    scroll-snap-align: start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: calc(73% - 12%);
+    position: relative;
+    left: 0%;
+    border: 18px double lightblue;
+    padding:25px;
 }
 
 .slider::-webkit-scrollbar {
@@ -208,29 +222,22 @@ p.new-rand-list {
   height: 20px;
 }
 .slider::-webkit-scrollbar-track {
-  background-color: #F5F5F5;
+  background-color: transparent;
 }
 
-.slider::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #314e52;
-}
 
 
 .food-container {
-  display: inline-grid;
-  grid-template-columns: repeat(4, auto);
-  padding: 10px;
-  grid-gap: 1rem;
-  border-radius: 8%;
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  justify-content: center;
-  margin: auto 25px;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  border: 1px solid black;
+    display: inline-grid;
+    grid-template-columns: repeat(5, auto);
+    padding: 18px;
+    grid-gap: 1rem;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    justify-content: center;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
 }
 
 .body-content img {
@@ -239,9 +246,9 @@ p.new-rand-list {
 }
 
 .body-content h1 {
-  grid-row: 1;
-  grid-column: 1 / span 4;
-  margin: 0;
+    grid-row: 1;
+    grid-column: 1 / span 5;
+    margin: 0;
 }
 
 .grid-item {
