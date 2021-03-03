@@ -50,7 +50,7 @@
       width: calc(100% - 70px);
       position: relative;
       left: 30px;
-      border-radius: 50%; 
+      border-radius: 50%;
 }
 
 .grid-item2 {
@@ -147,6 +147,41 @@ p.new-rand-list {
   content: "🆕";
 }
 
+
+
+/* marshmallow div */
+
+.marshmallow-div {
+  box-sizing: border-box;
+    width: calc(100% - 60px);
+    position: relative;
+    z-index: -1;
+    left: 64px;
+    margin-top:15px;
+}
+
+.marshmallow-div p:first-child {
+    color: #314e52;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    left: 25%;
+    top: 10%;
+    font-size: 81px;
+    letter-spacing: 25px;
+}
+
+.marshmallow-div p:nth-child(2n) {
+  position: absolute;
+    left: 34%;
+    top: 43%;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.marshmallow-pic {
+  width: 100%;
+}
 /* START - BODY-CONTENT CSS */
 .body-content {
     text-align: center;
@@ -219,8 +254,7 @@ p.new-rand-list {
 }
 
 .slider::-webkit-scrollbar {
-  width: 20px;
-  height: 20px;
+  display: none;
 }
 .slider::-webkit-scrollbar-track {
   background-color: transparent;
