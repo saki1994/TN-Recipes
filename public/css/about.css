@@ -1,0 +1,20 @@
+#mission {
+   font-size: 25px!important;
+  margin-bottom: 5%;
+ }
+
+ .about-content {
+    text-align: center;
+    padding: 6% 13%;
+}
+
+.about-content p {
+  line-height: 3;
+    font-family: 'Poppins';
+    text-align: left;
+    text-indent: 4em;
+}
+
+.about-content p:nth-child(2n) {
+    margin-top: 10%;
+}
