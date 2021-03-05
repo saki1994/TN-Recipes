@@ -156,141 +156,44 @@ p.new-rand-list {
 
 .marshmallow-div {
   box-sizing: border-box;
-    width: calc(100% - 60px);
+    width: 100%;
     position: relative;
     z-index: -1;
-    left: 64px;
     margin-top:15px;
+    height:25em;
+    margin-bottom: 20px;
+    height: 75vh;
 }
 
-.marshmallow-div p:first-child {
-    color: #314e52;
+.marshmallow-content {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    font-family: 'Poppins', sans-serif;
-    left: 25%;
-    top: 10%;
-    font-size: 81px;
-    letter-spacing: 25px;
+    left: 40%;
+    top: 0%;
+    text-align: center;
 }
 
-.marshmallow-div p:nth-child(2n) {
-  position: absolute;
-    left: 34%;
-    top: 43%;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 2px;
-    word-spacing: 3px;
+.marshmallow-content p:first-child {
+    width: 100%;
+    font-family: 'Poppins';
+    font-size: 4rem;
+    letter-spacing: 37px;
+    position: relative;
+    right: 25%;
+    color: #314e52;
+    margin-bottom: 0;
+}
+
+.marshmallow-content p:nth-child(2n) {
+    position: relative;
+    right: 33%;
+    color: #314e52;
+    font-family: 'Poppins';
 }
 
 .marshmallow-pic {
   width: 100%;
+  position: absolute;
+  z-index: -1;
 }
-/* START - BODY-CONTENT CSS */
-.body-content {
-    text-align: center;
-    width: calc(100vw - 5%);
-    position: relative;
-    left: 5%;
-    display: flex;
-    flex-direction: row;
-    padding: 6%;
-}
-
-
-.a-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    padding-left: 0;
-    width: 20%;
-    border: 18px double lightpink;
-    /* border-radius: 40%; */
-    border-right: none;
-    z-index: 1;
-    position: relative;
-    left: 100px;
-}
-
-.a-btn a {
-    font-family: var(--font-family);
-    text-decoration: none;
-    border: 1px solid lightblue;
-    box-shadow: 3px 4px 0px 0px #899599;
-    background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-    background-color: #ededed;
-    border-radius: 15px;
-    border: 1px solid #d6bcd6;
-    display: inline-block;
-    cursor: pointer;
-    color: #3a8a9e;
-    font-family: Arial;
-    font-size: 11px;
-    padding: 7px 25px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #e1e2ed;
-    width: 60%;
-    position: relative;
-    left: 15%;
-}
-
-.myButton:hover {
-	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-	background-color:#bab1ba;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
-.slider {
-    display: flex;
-    scroll-snap-align: start;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    width: calc(73% - 12%);
-    position: relative;
-    left: 0%;
-    border: 18px double lightblue;
-    padding:25px;
-}
-
-.slider::-webkit-scrollbar {
-  display: none;
-}
-.slider::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-
-
-.food-container {
-    display: inline-grid;
-    grid-template-columns: repeat(5, auto);
-    padding: 18px;
-    grid-gap: 1rem;
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    justify-content: center;
-    transform-origin: center center;
-    transform: scale(1);
-    transition: transform 0.5s;
-}
-
-.body-content img {
-  height: 100px;
-  width: 100px;
-}
-
-.body-content h1 {
-    grid-row: 1;
-    grid-column: 1 / span 5;
-    margin: 0;
-}
-
-.grid-item {
-  padding: 5%;
-}
-
-/*  LIST RECIPES */

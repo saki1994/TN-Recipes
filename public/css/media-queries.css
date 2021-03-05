@@ -1,6 +1,10 @@
 @media only screen and (max-width:1121px) {
+  .recipe-title img {
+        height: 64vh;
+  }
+
   .num1-recipe img {
-    height: calc(80% - 60px);
+    height: 50%;
     width: calc(100% - 43px);
     position: relative;
     left: 10px;
@@ -25,9 +29,65 @@
   .num1-recipe li {
     font-size: small;
   }
+
+  .marshmallow-div {
+    height: 50vh;
+  }
+
+  .marshmallow-content {
+    top: -7%;
+  }
+
+
 }
 
 @media only screen and (max-width:900px) {
+
+  /*navbar */
+  .recipe-title {
+    height: 77vh;
+  }
+
+  .recipe-title img {
+    height: 59vh;
+  }
+
+  .navbar {
+    top: 0%;
+    left: 4%;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .web-name h1 {
+    font-size: 6vh;
+    letter-spacing: 10px;
+  }
+
+  .recipe-title .search-btn {
+    width: 55%;
+    left: 21%;
+  }
+
+  /*marshmallow content */
+  .marshmallow-content {
+    top: -12%;
+  }
+
+  .marshmallow-content p:first-child {
+    right: 35%;
+    font-size: 3rem;
+    letter-spacing: 15px;
+  }
+
+  .marshmallow-content p:nth-child(2n) {
+    right: 40%;
+    font-size: 14px;
+  }
+
+
 
   /*TOP CONTAINER */
   .top-container-recipe {
@@ -39,7 +99,7 @@
   }
 
   .num1-recipe img {
-    height: 65%;
+    height: 50%;
     width: calc(69% - 20px);
     position: relative;
     left: 36px;
@@ -82,164 +142,162 @@
     margin-top: 36px;
   }
 }
- 
 
-  @media only screen and (max-width: 700px) {
-
-    .top-bar {
-      background-color: #314e52;
-      padding: 10px;
-      position: fixed;
-      width: 10%;
-      height: 101%;
-    }
-
-    /* TOP CONTAINER*/
-    .num1-recipe {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .num1-recipe img {
-      height: 30%;
-      width: calc(50% - 20px);
-      position: relative;
-      left: 25%;
-      top: 20px;
-    }
-
-    .num1-recipe .grid-item3 {
-      height: auto;
-      left: 40%;
-      top: 10%;
-    }
-
-    .num1-recipe ul {
-      position: relative;
-      top: 15%;
-      width: 94%;
-      column-count: 2;
-    }
-
-    .myButton {
-      font-size: xx-small;
-    }
-
-    .newly-added-recipes, .random-recipe {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 25px;
-      padding: 5%
-    }
-
-    .new-add-items {
-      height: 80px;
-      width: 80px;
-    }
-
-    /* BODY CONTENT*/
-    .top-bar {
-      background-color: #314e52;
-      padding: 13px;
-      position: fixed;
-      width: 9%;
-      height: 100%;
-      top: 0;
-      z-index: 1;
-    }
-
-    .open-btn {
-      font-size: 22px;
-      cursor: pointer;
-      background-color: inherit;
-      color: white;
-      border: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .top-bar .icon {
-      position: relative;
-      top: 73%;
-      margin-top: 20px;
-      left: 0%;
-      font-size: 18px;
-      color: white;
-      text-align: center;
-    }
-
-    .main-navbar {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 2;
-      top: 0px;
-      left: 0px;
-      background-color: #314e52;
-      overflow-x: hidden;
-      overflow-y: hidden;
-      padding-top: 20px;
-      transition: 0.9s;
-    }
-
-    .web-navbar {
-      margin-top: 3%;
-    }
-
-    .main-navbar a {
-      text-decoration: none;
-      font-size: 101%;
-      color: white;
-      display: block;
-      padding: 0px 10px 7px;
-    }
-
-    .icon-open-navbar i {
-      font-size: 17px;
-    }
-
-    .icon-open-navbar {
-      display: flex;
-      justify-content: space-between;
-      padding: 4%;
-      position: relative;
-      top: 58%;
-    }
-
-    .search-container {
-      position: relative;
-      top: 0;
-      width: 80vw;
-      left: 12%;
-      padding-right: -13px;
-      padding-top: 22px;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .web-logo {
-      font-size: 1.5rem;
-      margin-top: 0;
-      letter-spacing: 4px;
-    }
-
-    .search-input {
-      border: 0 ridge #314e52;
-      border-radius: 20px;
-      width: 73%;
-      height: 5vh;
-      text-align: center;
-      box-shadow: 0px 0px 4px 0px #314e52;
-      left: 14%;
-      position: relative;
-    }
-
-    .close-btn {
-      position: relative;
-      text-align: right;
-      right: 4%;
-      top: -1%;
-      font-size: 1.5rem !important;
-    }
+@media only screen and (max-width: 700px) {
+  .top-bar {
+    background-color: #314e52;
+    padding: 10px;
+    position: fixed;
+    width: 10%;
+    height: 101%;
   }
+
+  /* TOP CONTAINER*/
+  .num1-recipe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .num1-recipe img {
+    height: 30%;
+    width: calc(50% - 20px);
+    position: relative;
+    left: 25%;
+    top: 20px;
+  }
+
+  .num1-recipe .grid-item3 {
+    height: auto;
+    left: 40%;
+    top: 10%;
+  }
+
+  .num1-recipe ul {
+    position: relative;
+    top: 15%;
+    width: 94%;
+    column-count: 2;
+  }
+
+  .myButton {
+    font-size: xx-small;
+  }
+
+  .newly-added-recipes, .random-recipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 5%
+  }
+
+  .new-add-items {
+    height: 80px;
+    width: 80px;
+  }
+
+  /* BODY CONTENT*/
+  .top-bar {
+    background-color: #314e52;
+    padding: 13px;
+    position: fixed;
+    width: 9%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+  }
+
+  .open-btn {
+    font-size: 22px;
+    cursor: pointer;
+    background-color: inherit;
+    color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-bar .icon {
+    position: relative;
+    top: 73%;
+    margin-top: 20px;
+    left: 0%;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+  }
+
+  .main-navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    background-color: #314e52;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 20px;
+    transition: 0.9s;
+  }
+
+  .web-navbar {
+    margin-top: 3%;
+  }
+
+  .main-navbar a {
+    text-decoration: none;
+    font-size: 101%;
+    color: white;
+    display: block;
+    padding: 0px 10px 7px;
+  }
+
+  .icon-open-navbar i {
+    font-size: 17px;
+  }
+
+  .icon-open-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    position: relative;
+    top: 58%;
+  }
+
+  .search-container {
+    position: relative;
+    top: 0;
+    width: 80vw;
+    left: 12%;
+    padding-right: -13px;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .web-logo {
+    font-size: 1.5rem;
+    margin-top: 0;
+    letter-spacing: 4px;
+  }
+
+  .search-input {
+    border: 0 ridge #314e52;
+    border-radius: 20px;
+    width: 73%;
+    height: 5vh;
+    text-align: center;
+    box-shadow: 0px 0px 4px 0px #314e52;
+    left: 14%;
+    position: relative;
+  }
+
+  .close-btn {
+    position: relative;
+    text-align: right;
+    right: 4%;
+    top: -1%;
+    font-size: 1.5rem !important;
+  }
+}
