@@ -10,16 +10,34 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
+const pageTitles = ["Tin-Recipes", "Categories", "About Page"]
+
 app.get("/", (req, res) => {
-  res.render("home");
+
+  res.render("home", {
+    title: pageTitles[0]
+  });
+
+});
+
+app.get("/categories", (req, res) => {
+  const homepage = "Categories";
+
+  res.render("categories", {
+    title: pageTitles[1]
+  });
 
 });
 
 app.get("/about", (req, res) => {
-  res.render("about");
+  const homepage = "About Page";
+
+  res.render("about", {
+    title: pageTitles[2]
+  });
+
 
 });
-
 
 
 app.listen(port, () =>{
