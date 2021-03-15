@@ -1,6 +1,6 @@
 .categories-body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 2%;
 }
 
@@ -34,4 +34,53 @@
 .categories-btn:active {
   position: relative;
   top: 1px;
+}
+
+.categories-content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(270px, auto));
+  justify-content: space-around;
+  grid-gap:3%;
+  column-gap:2%;
+
+}
+
+.item-list:nth-child(odd) {
+  border: 1px solid black;
+  width:270px;
+  height:270px;
+  text-align: center;
+  padding:15px;
+}
+
+.item-list:nth-child(odd) img {
+  border: 1px solid red;
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+}
+
+.item-list:nth-child(even) {
+  border: 1px solid red;
+  width:280px;
+  height: 220px;
+  padding:15px;
+  text-align: center;
+  display: grid;
+}
+
+.item-list:nth-child(even) p{
+  grid-row: 1;
+  grid-column: span 2;
+}
+.item-list:nth-child(even) img {
+  width: 150px;
+  height:150px;
+}
+
+.item-list:nth-child(even) .social-btn {
+  display: inline-flex;
+    flex-direction: column;
+    width: fit-content;
 }
