@@ -84,3 +84,18 @@
     flex-direction: column;
     width: fit-content;
 }
+
+/*categories section stylig*/
+
+.section {
+  display: inline-block;
+  position: absolute;
+     width: calc(100vw - 10vw);
+    left: 5vw;
+    top: 98%;
+    visibility: hidden;
+}
+
+#chicken {
+  visibility: visible;
+}
