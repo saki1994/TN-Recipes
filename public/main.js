@@ -1,49 +1,46 @@
+const btn = document.querySelectorAll(".categories-btn");
+const cat = document.querySelectorAll(".section");
 
-let categoriesBtn = document.querySelectorAll("p.categories-btn");
-let sectionDiv = document.querySelectorAll(".section");
+function categoriesLoop(number) {
 
-
-
-
-function looping(number1) {
-  for (let i=0; i<sectionDiv.length; i++) {
-
-       if (i === number1) {
-         sectionDiv[i].style.visibility = "visible";
-       } else {
-       sectionDiv[i].style.visibility = "hidden";
-       }
-      }
+  for(let i=0; i<cat.length; i++) {
+     if (i === number) {
+      cat[i].style.display = "block";
+  } else {
+     cat[i].style.display = "none";
+  }
+}
 }
 
-function clicked(buttonClicked, divNumber) {
+function btnLoop(num1, num2) {
 
-  const txt = buttonClicked.innerHTML;
+  const btnText = num1.innerHTML;
 
-  switch (txt) {
+  switch (btnText) {
     case "Chicken":
-       looping(divNumber)
+      categoriesLoop(num2)
       break
     case "Beef":
-      looping(divNumber)
+      categoriesLoop(num2)
       break
     case "Pork":
-      looping(divNumber)
+      categoriesLoop(num2)
       break
-      case "Veggies":
-      looping(divNumber)
+    case "Veggies":
+      categoriesLoop(num2)
       break
-       case "Other Meat":
-      looping(divNumber)
+    case "Other Meat":
+      categoriesLoop(num2)
       break
-      case "desserts-section":
-     looping(divNumber)
-     break
+    case "Desserts":
+      categoriesLoop(num2)
+      break
   }
-};
+}
 
-for (let i = 0; i < categoriesBtn.length; i++) {
-  categoriesBtn[i].addEventListener("click", () =>
-    clicked(categoriesBtn[i],i)
-  )
+for (let i = 0; i < btn.length; i++) {
+
+  btn[i].addEventListener("click", function() {
+    btnLoop(btn[i], i);
+  })
 }
