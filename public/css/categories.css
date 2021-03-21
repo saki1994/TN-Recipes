@@ -35,12 +35,13 @@
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(270px, auto));
+  grid-column-gap: 15px;
   justify-content: space-around;
-  grid-gap:3%;
-  column-gap:2%;
 
 }
-
+.item-list {
+  margin:20px;
+}
 .item-list:nth-child(odd) {
   border: 1px solid black;
   width:270px;
@@ -84,5 +85,35 @@
 
 .section {
 
-  display: none; 
+  display: none;
+}
+
+.chicken-section {
+  display:block;
+}
+
+/*  NEwly added categories section */
+
+.cat-new-added {
+  display: flex;
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+  padding: 10px;
+  border: 1px solid black;
+  width:90vw;
+  position: relative;
+  left: 5vw;
+}
+
+.cat-new-added img {
+  height: 80px;
+  width:80px;
+}
+
+.cat-list {
+  flex: 0 0 auto;
+  height: 200px;
+  width: 200px;
+  border: 1px dashed black;
+  margin:10px;
 }
