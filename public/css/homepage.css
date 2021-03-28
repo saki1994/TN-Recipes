@@ -1,11 +1,9 @@
 .top-container-recipe {
-  --font-family: 'Poppins', sans-serif;
-  --txt-color: #314e52;
+  
   --txt-align: center;
 }
 
 .top-container-recipe {
-    box-sizing: border-box;
     display: grid;
     width: calc(100% - 100px);
     position: relative;
@@ -32,7 +30,7 @@
 }
 
 .num1-recipe {
-  border: 1px solid pink;
+  border: 1px solid rosybrown;
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
@@ -87,7 +85,7 @@
 }
 
 .myButton {
-  background-color: #314e52;
+  background-color: #493323;
   border-radius: 42px;
   display: inline-block;
   cursor: pointer;
@@ -116,7 +114,7 @@
 }
 
 .list-recipes {
-  border: 1px solid lightblue;
+  border: 1px solid burlywood;
   display: flex;
   flex-direction: column;
   font-family: var(--font-family);
@@ -155,7 +153,6 @@ p.new-rand-list {
 /* marshmallow div */
 
 .marshmallow-div {
-  box-sizing: border-box;
     width: 100%;
     position: relative;
     z-index: -1;
@@ -163,6 +160,7 @@ p.new-rand-list {
     height:25em;
     margin-bottom: 20px;
     height: 75vh;
+
 }
 
 .marshmallow-content {
@@ -170,26 +168,26 @@ p.new-rand-list {
     flex-direction: column;
     position: absolute;
     left: 40%;
-    top: 0%;
+    top: 10%;
     text-align: center;
 }
 
 .marshmallow-content p:first-child {
     width: 100%;
-    font-family: 'Poppins';
+    font-family: var(--font-family);
     font-size: 4rem;
     letter-spacing: 37px;
     position: relative;
     right: 25%;
-    color: #314e52;
+    color: var(--txt-color);
     margin-bottom: 0;
 }
 
 .marshmallow-content p:nth-child(2n) {
     position: relative;
     right: 33%;
-    color: #314e52;
-    font-family: 'Poppins';
+    color: var(--txt-color);
+    font-family: var(--font-family);
 }
 
 .marshmallow-pic {

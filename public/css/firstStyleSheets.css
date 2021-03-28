@@ -1,18 +1,23 @@
 /* csslint ignore:start*/
 :root {
-  --topbar-bgcolor: #314e52;
+   --font-family: 'Poppins', sans-serif;
+   --box-sizing:border-box;
+   --txt-color: #493323;
+
 }
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: var(--box-sizing);
+  padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
-  box-sizing: border-box;
+  box-sizing: var(--box-sizing);
   padding: 0;
   margin: 0;
 }
@@ -21,31 +26,27 @@ body {
 /* NAVBAR */
 
 .recipe-title {
-      height: 75vh;
+  height: 75vh;
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* background: #314e52; */
     height: 42px;
-    position: relative;
-    top: -2%;
 }
 
 .navbar a {
     text-decoration: none;
     color: white;
     letter-spacing: 7px;
-    font-family: 'Poppins';
+    font-family: var(--font-family);
     font-size: 19px;
 }
 
 .recipe-title img {
     width: 100%;
     position: absolute;
-    /* height: 449px; */
     left: 0;
     top: 0;
     z-index: -1;
@@ -60,24 +61,20 @@ body {
    position: relative;
    left: 24%;
    top: 10%;
-   /* justify-content: center; */
 }
 
 .web-name h1 {
-    /* position: absolute; */
-    /* top: 2%; */
     font-size: 8vh;
     letter-spacing: 12px;
-    font-family: 'Poppins';
+    font-family: var(--font-family);
     margin-bottom: 20px;
 }
 
 .web-name p {
-    font-family: 'Poppins';
+    font-family: var(--font-family);
     font-size: 12px;
     letter-spacing: 1px;
     word-spacing: 1px;
-    /* left: 7%; */
     margin-top: 0;
     width: 96%;
 
@@ -107,7 +104,7 @@ body {
 
 /* FOOTER */
 .footer {
-  text-align: center; 
+  text-align: center;
 }
 
 .top-bar .icon {
@@ -125,7 +122,6 @@ body {
   padding: 18%;
   position: relative;
   top: 42%;
-  box-sizing: border-box;
   right: 17%;
   left: 0px;
 }

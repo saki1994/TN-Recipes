@@ -10,7 +10,7 @@
 
 .about-content p {
   line-height: 3;
-    font-family: 'Poppins';
+    font-family: var(--font-family);
     text-align: left;
     text-indent: 4em;
 }
