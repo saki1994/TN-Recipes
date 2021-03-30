@@ -37,7 +37,7 @@
 .categories-content {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(270px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(270px, auto));
   grid-column-gap: 15px;
   justify-content: space-around;
   padding-top:20px;
@@ -46,9 +46,9 @@
 .item-list {
   margin:20px;
 
-    box-shadow: 2px 2px 2px 2px var(--txt-color);
-    border-top: 1px solid var(--txt-color);
-    border-left: 1px solid var(--txt-color);
+    box-shadow: 2px 2px 2px 2px #d0af84;
+    border-top: 1px solid #d0af84;
+    border-left: 1px solid #d0af84;
 }
 
 

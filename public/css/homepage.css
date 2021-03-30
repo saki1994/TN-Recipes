@@ -1,3 +1,31 @@
+.main-section {
+  display: flex;
+  flex-flow: row;
+}
+
+.top-recipe-left {
+  width: 50%;
+    border: 1px solid black;
+    height: fit-content;
+}
+.top-item img{
+  width: 80px;
+  height: 80px;
+}
+
+.top-recipe-right {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid black;
+  width: 50%;
+}
+
+.most-viewed, .random-added {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+
 
 /* marshmallow div */
 
