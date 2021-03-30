@@ -43,6 +43,12 @@ app.get("/about", (req, res) => {
     webQoute: qoutes[2]
   });
 
+});
+
+app.get("/post", (req, res) => {
+  // const homepage = "post";
+
+  res.render("post");
 
 });
 

@@ -1,0 +1,56 @@
+root {
+  --txt-color: #493323;
+}
+
+ body {
+   margin: 0;
+   padding: 0;
+   color: var(--txt-color);
+   font-family: 'Poppins', sans-serif;
+ }
+
+ body::-webkit-scrollbar  {
+    background: lavender;
+    width:15px;
+ }
+
+ body::-webkit-scrollbar-thumb {
+    background: linear-gradient(red, purple);
+    border-radius: 50px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'Poppins', sans-serif;
+  background: url("../images/top-background.jpg");
+  background-position:0;
+  padding-top: 8px;
+  box-shadow: 1px 3px 3px 3px #493323;
+}
+
+nav p {
+  display: inline-block;
+  margin:0;
+}
+
+nav a {
+  text-decoration: none;
+  color: snow;
+  font-size: 20px;
+    letter-spacing: 7px;
+}
+
+.recipe-post {
+  text-align: center;
+  width:50vw;
+  background: lavender;
+  position: relative;
+  left: 25%;
+}
+
+.recipe-post textarea {
+  height: 100px;
+    width: 90%;
+}

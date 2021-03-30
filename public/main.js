@@ -1,11 +1,12 @@
 const btn = document.querySelectorAll(".categories-btn");
 const cat = document.querySelectorAll(".section");
 
+
 function categoriesLoop(number) {
 
   for(let i=0; i<cat.length; i++) {
-     if (i === number) {
-      cat[i].style.display = "block";
+     if (i === number)   {
+      cat[i].style.display = "block"; 
   } else {
      cat[i].style.display = "none";
   }

@@ -1,0 +1,33 @@
+<%- include('partials/postHeader'); -%>
+
+<div class="recipe-post">
+<form class="" action="index.html" method="post">
+  <label for="fname">Food Title</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  <p>Main ingredient tag:</p>
+  <label for="fname">Chicken</label>
+  <input type="radio" id="lname" name="lname">
+  <label for="fname">Pork</label>
+  <input type="radio" id="lname" name="lname">
+  <label for="fname">Beef</label>
+  <input type="radio" id="lname" name="lname">
+  <label for="fname">Veggies</label>
+  <input type="radio" id="lname" name="lname">
+  <label for="fname">Other Meat</label>
+  <input type="radio" id="lname" name="lname">
+  <label for="fname">Dessert</label>
+  <input type="radio" id="lname" name="lname"><br>
+
+
+<textarea name="name" rows="8" cols="80"></textarea><br>
+
+<label for="avatar">Upload a Photo:</label><br>
+
+<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg"><br>
+
+  <input type="submit" value="Submit">
+</form>
+</div>
+<%- include('partials/postFooter'); -%>
