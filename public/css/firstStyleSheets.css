@@ -1,147 +1,31 @@
 /* csslint ignore:start*/
 :root {
    --font-family: 'Poppins', sans-serif;
-   --box-sizing:border-box;
-   --txt-color: #493323;
-
+   --navbar-txt-color: #fff;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: var(--box-sizing);
-  padding: 0;
-  margin: 0;
-}
 
-body {
+html, body {
+  height: 100%;
+  width: 100%;
   overflow-x: hidden;
-  box-sizing: var(--box-sizing);
   padding: 0;
-  margin: 0;
-}
-
-body::-webkit-scrollbar  {
-   background: lavender;
-   width:15px;
-
-}
-
-body::-webkit-scrollbar-thumb {
-   background: linear-gradient(white, brown, var(--txt-color), brown, white);
-   border-radius: 50px;
-   border: 1px solid black;
+  margin:0;
 }
 
 
-/* NAVBAR */
-
-.recipe-title {
-  height: 75vh;
-}
+/* NAVBAR STYLING STARTS*/
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 42px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: white;
-    letter-spacing: 7px;
-    font-family: var(--font-family);
-    font-size: 19px;
-}
-
-.recipe-title img {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    box-shadow: 1px 3px 3px 3px #493323;
-}
-
-.web-name {
-   text-align: center;
-   color: #fff;
-   display: flex;
-   flex-direction: column;
-   width: 50%;
-   position: relative;
-   left: 24%;
-   top: 20%;
-}
-
-.web-name h1 {
-    font-size: 8vh;
-    letter-spacing: 12px;
-    font-family: var(--font-family);
-    margin-bottom: 20px;
-}
-
-.web-name p {
-    font-family: var(--font-family);
-    font-size: 12px;
-    letter-spacing: 1px;
-    word-spacing: 1px;
-    margin-top: 0;
-    width: 96%;
-
-}
-
-.search-btn {
-    background: transparent;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    height: 30px;
-    width: calc(50% - 8%);
-    position: absolute;
-    left: 27%;
-    top: 124%;
-    outline: none;
-    color: #fff;
-    text-align: center;
-}
-
-.search-btn::placeholder {
-  text-align:center;
-  color:#fff;
-  font-style: italic;
-  letter-spacing: 1px;
-    word-spacing: 2px;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-}
-
-.top-bar .icon {
-  font-size: 26px;
-  color: white;
-  position: relative;
-  top: 54%;
-  text-align: center;
-  margin-top: 36px;
-}
-
-.icon-open-navbar {
+  list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  padding: 18%;
-  position: relative;
-  top: 42%;
-  right: 17%;
-  left: 0px;
-}
-
-.icon-open-navbar i {
-  font-size: 19px;
-}
-
-.footer-para {
+  flex-direction: row;
+  justify-content: space-around;
   margin: 0;
+  padding: 10px 0;
+  letter-spacing: 1px;
+  font-family: var(--font-family);
+  color: var(--navbar-txt-color);
+  background-image: url(../images/top-background.jpg);
+  background-position: left center;
 }
