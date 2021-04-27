@@ -1,0 +1,142 @@
+
+  .home-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows:  150px;
+    font-family: var(--font-family);
+    padding: 2%;
+    grid-template-areas:
+    "top-recipe new-added"
+    "top-recipe random-item";
+    grid-gap: 50px;
+  }
+
+
+  .newly-added {
+    grid-area: new-added;
+    height:150px;
+  }
+
+  .random-recipe {
+    grid-area :random-item;
+  }
+
+  .right-side-content {
+    border: 1px solid black;
+    grid-area:top-recipe; /*for home-content grid*/
+    display: grid;
+    grid-template-areas:"recipe-of-the-day" "title" "recipe-content";
+  }
+
+.right-side-content > * {
+  margin: var(--box-margin);
+}
+
+.top-recipe-title {
+  grid-area: recipe-of-the-day;
+  padding: 15px;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  grid-area: title;
+}
+
+.content-top-recipe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "image recipe-ins";
+  grid-area: recipe-content;
+  width: calc(100% - 30px);
+  padding: 0 10px 0;
+}
+
+.top-box-img {
+position: relative;
+grid-area: image;
+width: 70%;
+height: 70%;
+}
+
+.top-one-logo {
+  height: 45%;
+width: 45%;
+position: absolute;
+border-radius: 50%;
+left: -20px;
+top: -20px;
+}
+.top-one-img {
+  height: 100%!important; /*needed to add important since the img has a default size*/
+  width: 100%!important; /*not sure where the f did i put it*/
+  }
+
+  .top-recipe-ins {
+  grid-area: recipe-ins;
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  }
+  .top-recipe-ins > h6 {
+    margin: 0;
+    letter-spacing: 1px;
+  }
+    .top-recipe-ins > * {
+      margin-top:5px;
+      font-size: calc(.5em + .25vw)
+    }
+
+.right-side-content input[type=checkbox] {
+   width: 10px;
+   height:10px;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   -webkit-appearance: none; /*this will remove the default check box */
+   outline: 0;
+   margin: 0 5px 0 0;
+}
+
+ input[type=checkbox]:checked {
+  background-image: url(../images/check-box.png);
+}
+
+input[type=checkbox]:not(:checked) {
+ background-image: url(../images/uncheck-box.png);
+}
+
+
+/*LEFT CONTENT STYLE STARTS HERE */
+
+.newly-added, .random-recipe {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 2%;
+}
+
+
+.new-add-title p, .random-item-title p {
+font-family: var(--font-family);
+font-weight: bold;
+letter-spacing: 1px;
+font-size: 1em;
+text-align: center;
+}
+
+.new-item-section, .random-item-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+
+.newly-added img, .random-recipe img {
+  height: 50px;
+  width: 50px;
+}
+
+.new-item p, .random-item p {
+  margin: 0;
+  font-size: .75em;
+}

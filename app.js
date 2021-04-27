@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-const pageTitles = ["Tin-Recipes", "Categories", "About Page"]
+const pageTitles = ["TN-Recipes", "Categories", "About Page"]
 const qoutes = [
   "Recipes to inspire your inner chef",
   "People who love to cook are always the best people",

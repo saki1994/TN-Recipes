@@ -1,10 +1,79 @@
 <%- include('partials/header'); -%>
 
- <ul class="navbar">
-   <li>Home</li>
-   <li>Categories</li>
-   <li>About</li>
- </ul>
-
+<div class="home-content">
+  <div class="right-side-content">
+    <h2 class="top-recipe-title">Recipe of the Day</h2>
+    <h4>Food Title</h4>
+    <div class="content-top-recipe">
+      <div class="top-box-img">
+        <img class="top-one-logo" src="/images/top1.png" alt="">
+        <img class="top-one-img" style="width:50px; height:50px;" src="/images/chicken.jpg" alt="">
+      </div>
+      <ul class="top-recipe-ins">
+          <h6>Ingredients</h6>
+          <li><input type="checkbox">1 serving cooking spray</li>
+          <li><input type="checkbox">1 tablespoon butter, melted</li>
+          <li><input type="checkbox">1 tablespoon hot honey</li>
+          <li><input type="checkbox">1 teaspoon grated orange zest</li>
+          <li><input type="checkbox">½ teaspoon ground cardamom</li>
+          <button type="button" name="button">Full list...</button>
+      </ul>
+    </div>
+  </div>
+  <div class="newly-added">
+    <div class="new-add-title">
+      <p>Newly Added Recipe</p>
+    </div>
+    <div class="new-item-section">
+      <div class="new-item">
+        <img src="/images/beef.jpg" alt="chicken">
+        <p>food title</p>
+      </div>
+      <div class="new-item">
+        <img src="/images/chicken.jpg" alt="chicken">
+        <p>food title</p>
+      </div>
+      <div class="new-item">
+        <img src="/images/veg.jpg" alt="chicken">
+        <p>food title</p>
+      </div>
+      <div class="new-item">
+        <img src="/images/lamb.jpg" alt="chicken">
+        <p>food title</p>
+      </div>
+      <div class="new-item">
+        <img src="/images/pork.jpg" alt="chicken">
+        <p>food title</p>
+      </div>
+    </div>
+  </div>
+  <div class="random-recipe">
+    <div class="random-item-title">
+      <p>Random Recipe</p>
+    </div>
+    <div class="random-item-section">
+      <div class="random-item">
+        <img src="/images/beef.jpg" alt="chicken">
+        <p>food title</p>
+      </div>
+      <div class="random-item">
+        <img src="/images/chicken.jpg" alt="chicken">
+        <p>food title</p>
+      </div>
+      <div class="random-item">
+        <img src="/images/veg.jpg" alt="chicken">
+        <p>food title</p>
+      </div>
+      <div class="random-item">
+        <img src="/images/lamb.jpg" alt="chicken">
+        <p>food title</p>
+      </div>
+      <div class="random-item">
+        <img src="/images/pork.jpg" alt="chicken">
+        <p>food title</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <%- include('partials/footer'); -%>
